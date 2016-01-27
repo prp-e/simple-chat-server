@@ -1,6 +1,9 @@
 require 'socket'
 
-s = TCPServer.new(8569)
+port = ARGV[0]
+
+def server_init(port = 8569)
+ s = TCPServer.new(port.to_i)
 
 loop {
  Thread.start(s.accept) {|n|
@@ -16,3 +19,6 @@ loop {
    end
   }
 }
+end
+
+server_init(port)
