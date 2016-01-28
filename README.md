@@ -3,7 +3,7 @@
 ## How to use
 
 ```
-  ruby server.rb THE_PORT_YOU_WANT
+  ruby echo-server.rb THE_PORT_YOU_WANT
 ```
 
 Then
@@ -11,5 +11,7 @@ Then
 ```
   telnet 127.0.0.1 THE_PORT_YOU_ENTERED
 ```
+
+If you want to have paritcipants in chat, just run `server.rb` file, and telnet to destination server over port 8569. 
 
 Default port is 8569
